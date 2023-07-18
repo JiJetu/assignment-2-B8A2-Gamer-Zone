@@ -153,6 +153,7 @@ nav {
 }
 .banner-container img {
     height: 100%;
+    width: auto;
 }
 
 
@@ -163,13 +164,28 @@ nav {
 
     /* shared */
     nav,
-    .page-container {
+    .page-container,
+    .banner-container
+    {
         flex-direction: column;
     }
 
-    /* nav */
+    /* nav section */
     nav {
         gap: 4rem;
+    }
+    /* banner section */
+    .banner-section{
+        background-image: none;
+    }
+    .banner-container .banner {
+        width: 100%;
+        background-image: url("../images/Group\ 14.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+    .banner-container img {
+        width: 100%;
     }
 }
 
