@@ -240,6 +240,11 @@ nav {
     .banner-container img {
         width: 100%;
     }
+
+    /* online section */
+    .card-container{
+        grid-template-columns: 1fr;
+    }
 }
 
 
