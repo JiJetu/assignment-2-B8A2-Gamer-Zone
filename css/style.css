@@ -21,19 +21,26 @@ body {
 }
 
 /* primary title */
-.primary-text {
+.primary-title {
     color: #0B0223;
     font-size: var(--primary-font-size);
     font-weight: 700;
 }
+/* primary text color */
+.primary-text{
+    background-image: var(--secondary-background-color);
+    color: transparent;
+    -webkit-background-clip: text;
+}
 /* primary btn */
-.primary-btn{
+.primary-btn {
     padding: 21px 40px;
     background-color: rgba(255, 66, 165, 1);
     border-radius: 48px;
     border: none;
     color: white;
 }
+
 /* header section style */
 header {}
 
@@ -97,6 +104,7 @@ nav {
     /* justify-content: space-between; */
     align-items: center;
     gap: 1.5rem;
+
 }
 
 /* banner section */
@@ -131,9 +139,6 @@ nav {
     font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
-    background-image: var(--secondary-background-color);
-    color: transparent;
-    -webkit-background-clip: text;
 }
 
 .banner-container .banner-list {
@@ -145,15 +150,56 @@ nav {
     margin-top: 24px;
     margin-bottom: 24px;
 }
-.banner-container .banner-list li{
+
+.banner-container .banner-list li {
     margin-bottom: 17px;
 }
-.banner-container .banner .btn{
+
+.banner-container .banner .btn {
     background-color: #4EC5F7;
 }
+
 .banner-container img {
     height: 100%;
     width: auto;
+}
+
+/* Online Games Funny Videos */
+.online {
+    max-width: 1440px;
+    margin: 120px auto;
+}
+
+.online>h1,
+.online>p {
+    text-align: center;
+}
+
+.online>h1 {
+    margin-bottom: 16px;
+}
+
+.online>p {
+    margin-bottom: 48px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.card {
+    width: 342px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-description {
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 24px;
 }
 
 
@@ -164,8 +210,7 @@ nav {
 
     /* shared */
     nav,
-    .page-container
-    {
+    .page-container {
         flex-direction: column;
     }
 
@@ -173,13 +218,16 @@ nav {
     nav {
         gap: 4rem;
     }
+
     /* banner section */
-    .banner-container{
+    .banner-container {
         flex-direction: column-reverse;
     }
-    .banner-section{
+
+    .banner-section {
         background-image: none;
     }
+
     .banner-container .banner {
         width: 100%;
         background-image: url("../images/Group\ 14.png");
@@ -188,6 +236,7 @@ nav {
         background-size: cover;
         /* margin: 0 auto; */
     }
+
     .banner-container img {
         width: 100%;
     }
@@ -196,4 +245,37 @@ nav {
 
 
 /* medium device or tablet device */
-@media screen and (min-width: 576px) and (max-width: 992px) {}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* shared */
+    /* nav,
+    .page-container
+    {
+        flex-direction: column;
+    } */
+
+    /* nav section */
+    nav {
+        gap: 4rem;
+    }
+
+    /* banner section */
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-section {
+        background-image: none;
+    }
+
+    .banner-container .banner {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; */
+    }
+
+    .banner-container img {
+        width: 100%;
+    }
+}
