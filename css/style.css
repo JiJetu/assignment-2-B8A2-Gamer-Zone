@@ -164,8 +164,7 @@ nav {
 
     /* shared */
     nav,
-    .page-container,
-    .banner-container
+    .page-container
     {
         flex-direction: column;
     }
@@ -175,6 +174,9 @@ nav {
         gap: 4rem;
     }
     /* banner section */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
     .banner-section{
         background-image: none;
     }
@@ -183,6 +185,8 @@ nav {
         background-image: url("../images/Group\ 14.png");
         background-repeat: no-repeat;
         background-position: top left;
+        background-size: cover;
+        /* margin: 0 auto; */
     }
     .banner-container img {
         width: 100%;
