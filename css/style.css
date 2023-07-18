@@ -23,12 +23,13 @@ body {
 
 /* header section style */
 header {
-    max-width: 1440px;
-    margin: 0 auto;
+    
 }
 
 /* navbar section style */
 nav {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 45px 0px;
     display: flex;
     justify-content: space-between;
@@ -83,6 +84,31 @@ nav {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
+}
 
+
+
+
+/* responsive media query */
+
+/* small device or mobile device */
+@media screen and (max-width: 576px) {
+    /* shared */
+    nav,
+    .page-container 
+    {
+        flex-direction: column;
+    }
+     /* nav */
+     nav{
+        gap: 4rem;
+     }
+}
+
+
+
+/* medium device or tablet device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    
 }
