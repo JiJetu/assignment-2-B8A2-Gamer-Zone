@@ -20,11 +20,22 @@ body {
     --primary-font-size: 3rem;
 }
 
-
-/* header section style */
-header {
-    
+/* primary title */
+.primary-text {
+    color: #0B0223;
+    font-size: var(--primary-font-size);
+    font-weight: 700;
 }
+/* primary btn */
+.primary-btn{
+    padding: 21px 40px;
+    background-color: rgba(255, 66, 165, 1);
+    border-radius: 48px;
+    border: none;
+    color: white;
+}
+/* header section style */
+header {}
 
 /* navbar section style */
 nav {
@@ -42,7 +53,8 @@ nav {
     align-items: center;
     gap: 1.2rem;
 }
-.logo-container img{
+
+.logo-container img {
     object-fit: cover;
 }
 
@@ -87,28 +99,81 @@ nav {
     gap: 1.5rem;
 }
 
+/* banner section */
+.banner-section {
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    /* height: 700px; */
+}
 
+.banner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 45px 0px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.banner-container .banner {
+    width: 50%;
+}
+
+
+.banner-container .banner-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-container .goat {
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-image: var(--secondary-background-color);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-container .banner-list {
+    list-style: none;
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.banner-container .banner-list li{
+    margin-bottom: 17px;
+}
+.banner-container .banner .btn{
+    background-color: #4EC5F7;
+}
+.banner-container img {
+    height: 100%;
+}
 
 
 /* responsive media query */
 
 /* small device or mobile device */
 @media screen and (max-width: 576px) {
+
     /* shared */
     nav,
-    .page-container 
-    {
+    .page-container {
         flex-direction: column;
     }
-     /* nav */
-     nav{
+
+    /* nav */
+    nav {
         gap: 4rem;
-     }
+    }
 }
 
 
 
 /* medium device or tablet device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    
-}
+@media screen and (min-width: 576px) and (max-width: 992px) {}
