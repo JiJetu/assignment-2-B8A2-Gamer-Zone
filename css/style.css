@@ -26,12 +26,14 @@ body {
     font-size: var(--primary-font-size);
     font-weight: 700;
 }
+
 /* primary text color */
-.primary-text{
+.primary-text {
     background-image: var(--secondary-background-color);
     color: transparent;
     -webkit-background-clip: text;
 }
+
 /* primary btn */
 .primary-btn {
     padding: 21px 40px;
@@ -71,11 +73,11 @@ nav {
 
 }
 
-.logo-container .logo span {
+/* .logo-container .logo span {
     background-image: var(--primary-background-color);
     color: transparent;
     -webkit-background-clip: text;
-}
+} */
 
 .page-container {
     display: flex;
@@ -182,11 +184,13 @@ nav {
 .online>p {
     margin-bottom: 48px;
 }
-.card-container{
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
+
 .card {
     width: 342px;
 }
@@ -202,6 +206,51 @@ nav {
     margin-top: 24px;
 }
 
+/* Play Instantly section style */
+.play-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 200px;   
+}
+
+.play-container .play{
+    width: calc(50% - 200px);
+    margin-left: 200px;
+}
+.play-container .play>h1 , .play-container .play>.play-description {
+    text-align: right;
+    width: 353px;
+}
+.play-container .play span {
+    background-image: var(--primary-background-color);
+}
+
+.play-container .play .play-description {
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.play-img-container{
+    width: 50%;
+    position: relative;
+}
+.play-img-container img:first-child{
+    width: 100%;
+    height: 650px;
+}
+.play-img-container img:last-child{
+    width: 318.5px;
+    height: 365.083px;
+    position: absolute;
+    transform: translateY(-80%);
+    left: -25%;
+
+}
+
+
 
 /* responsive media query */
 
@@ -210,7 +259,9 @@ nav {
 
     /* shared */
     nav,
-    .page-container {
+    .page-container,
+    .play-container
+    {
         flex-direction: column;
     }
 
@@ -241,10 +292,29 @@ nav {
         width: 100%;
     }
 
-    /* online section */
-    .card-container{
+    /* Online Games Funny Videos section */
+    .card-container {
         grid-template-columns: 1fr;
     }
+    /* play section */
+    .play-container .play>h1 , .play-container .play>.play-description {
+        text-align: center;
+    }
+    .play-container .play{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .play-img-container{
+        width: 100%;
+    }
+    /* .play-img-container img:first-child{
+        height: 650px;
+    
+    } */
+    /* .play-img-container img:last-child{
+        height: 300.083px;
+        width: auto;
+    } */
 }
 
 
@@ -282,5 +352,10 @@ nav {
 
     .banner-container img {
         width: 100%;
+    }
+
+    /* Online Games Funny Videos section */
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
