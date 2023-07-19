@@ -366,6 +366,9 @@ nav {
     .play-img-container {
         width: 100%;
     }
+    .game-type {
+        gap: 10px;
+    }
 
 }
 
@@ -426,5 +429,9 @@ nav {
 
     .play-img-container {
         width: 100%;
+    }
+    .game-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
