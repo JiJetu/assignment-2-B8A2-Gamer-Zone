@@ -304,6 +304,16 @@ nav {
 }
 
 
+/* footer section style */
+footer{
+    margin: 120px auto;
+}
+
+
+
+
+
+
 
 
 /* responsive media query */
@@ -374,6 +384,7 @@ nav {
     .game-type {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
 }
