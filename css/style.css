@@ -203,8 +203,19 @@ nav {
     margin-top: 24px;
     margin-bottom: 24px;
 }
-.gamer img{
+
+.gamer img {
     width: 100%;
+}
+
+.gamer-purpose {
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.gamer-purpose span {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* Online Games Funny Videos */
@@ -407,7 +418,8 @@ footer {
     /* shared */
     nav,
     .page-container,
-    .play-container {
+    .play-container,
+    .gamer {
         flex-direction: column;
     }
 
@@ -436,6 +448,15 @@ footer {
 
     .banner-container img {
         width: 100%;
+    }
+
+    /* gamer section */
+    .gamer {
+        padding: 0px;
+    }
+
+    .gamer-info-container {
+        text-align: center;
     }
 
     /* Online Games Funny Videos section */
@@ -493,7 +514,9 @@ footer {
 
     /* shared */
     .play-container,
-    nav {
+    nav,
+    .gamer
+    {
         flex-direction: column;
     }
 
@@ -521,6 +544,10 @@ footer {
 
     .banner-container img {
         width: 100%;
+    }
+    /* gamer section */
+    .gamer-info-container {
+        text-align: center;
     }
 
     /* Online Games Funny Videos section */
