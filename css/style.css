@@ -41,6 +41,10 @@ body {
     border-radius: 48px;
     border: none;
     color: white;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* logo */
@@ -169,6 +173,40 @@ nav {
     width: auto;
 }
 
+/* main section */
+
+/* We are gamer section */
+.gamer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.gamer-info-container {
+    text-align: right;
+    width: 50%;
+}
+
+.gamer-title {
+    background-image: var(--secondary-background-color);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gamer-description {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.gamer img{
+    width: 100%;
+}
+
 /* Online Games Funny Videos */
 .online {
     max-width: 1440px;
@@ -195,7 +233,7 @@ nav {
 }
 
 .card {
-    width: 342px;
+    width: 300px;
 }
 
 .card img {
@@ -344,12 +382,14 @@ footer {
     color: white;
 }
 
-.rights-container a, .footer-text{
+.rights-container a,
+.footer-text {
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
     font-weight: 500;
 }
-.footer-text{
+
+.footer-text {
     margin-top: 18px;
 }
 
@@ -425,19 +465,23 @@ footer {
     .box-container {
         flex-basis: 100px;
     }
+
     .box-description {
         font-size: 10px;
-        
+
     }
-    .box-container img{
+
+    .box-container img {
         width: 40px;
     }
 
     /* footer */
-    .footer-page-container, .social-container{
+    .footer-page-container,
+    .social-container {
         flex-wrap: wrap;
     }
-    .social-container{
+
+    .social-container {
         gap: 85px;
     }
 }
@@ -449,8 +493,7 @@ footer {
 
     /* shared */
     .play-container,
-    nav
-    {
+    nav {
         flex-direction: column;
     }
 
