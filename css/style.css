@@ -297,7 +297,11 @@ nav {
     border: 1px solid black;
 }
 
-.box-description {}
+.box-description {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 
 
@@ -366,8 +370,10 @@ nav {
     .play-img-container {
         width: 100%;
     }
+
     .game-type {
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -430,6 +436,7 @@ nav {
     .play-img-container {
         width: 100%;
     }
+
     .game-type {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
