@@ -397,7 +397,11 @@ nav {
     margin: 240px auto 140px;
     flex-direction: row-reverse;
 }
-
+.play-game>.play-game-container>h1, 
+.play-game>.play-game-container > .play-description
+{
+    text-align: left;
+}
 
 /* Game Type section style */
 
@@ -417,7 +421,7 @@ nav {
     align-items: center;
     gap: 10px;
     width: 280px;
-    /* flex-basis: 220px; */
+    flex-basis: 220px;
 }
 
 
