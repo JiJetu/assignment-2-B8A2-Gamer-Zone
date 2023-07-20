@@ -3,7 +3,7 @@
 
 /* shared style */
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0px;
     padding: 0px;
 }
@@ -45,6 +45,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* logo */
